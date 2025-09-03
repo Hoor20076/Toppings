@@ -1,0 +1,48 @@
+body{
+    text-align: center;
+    background-color: rgb(238, 204, 161);
+}
+h1{
+    background-color: rgb(244, 148, 180);
+    color:rgb(208, 33, 208);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.dessert-container{
+    display:grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    text-align: center;
+}
+.dessert-container p{
+    padding: 20px;
+    background-color:rgb(237, 140, 173);
+    color:rgb(174, 61, 174);
+    font-size:x-large;
+}
+.dessert-container img{
+    width: 150px;
+    height: 150px;
+    padding-bottom: 20px;
+    margin: auto;
+    animation: dessert 1s ease-in-out 2s infinite alternate;
+}
+@keyframes dessert{
+    from{
+    transform: scale(.8);
+    }
+    to{
+        transform: rotate(2);
+    }
+}
+img{
+    width: 900px;
+    height: 700px;
+}
+@media (max-width: 700px) {
+    .dessert-container img{
+        width: 60px;
+        height:60px ;
+    }
+}
